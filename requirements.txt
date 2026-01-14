@@ -1,0 +1,17 @@
+torch
+torchvision
+torchaudio
+scikit-learn
+matplotlib
+pandas
+tqdm
+pyyaml
+Pillow
+fastapi
+uvicorn
+wandb
+seaborn
+streamlit
+python-multipart
+requests
+plotly

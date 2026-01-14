@@ -1,0 +1,45 @@
+.git/
+.gitignore
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Exclude data directories
+data/
+test_images/
+outputs/
+*.csv
+*.png
+!assets/*.png
+
+# Exclude documentation (keep README.md)
+deployment_guide.md
+DEPLOYMENT_PUBLIC.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+wandb/
+
+# Large datasets
+ham10000_images/
+HAM10000_*/
+
+# Docker files not needed
+docker-compose.yml
