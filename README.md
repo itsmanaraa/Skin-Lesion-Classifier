@@ -63,6 +63,11 @@ To run the application with hot-reloading enabled for development:
     ```
     The UI will open in your browser at `http://localhost:8501`.
 
+## Deployment
+
+For detailed instructions on deploying to Docker, Render, Hugging Face Spaces, or other cloud providers, please refer to the [Deployment Guide](deployment_guide.md).
+
+
 ## Model Performance
 
 - Training Dataset: HAM10000 (10,015 images)
