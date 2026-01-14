@@ -41,6 +41,28 @@ This application uses a ResNet18 model trained on the HAM10000 dataset to classi
 4. Review the prediction results and confidence scores
 5. Check the "CLASS INFORMATION" tab for detailed information about each lesion type
 
+
+## Development Mode
+
+To run the application with hot-reloading enabled for development:
+
+1.  **Install Dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2.  **Start Backend (FastAPI)**
+    ```bash
+    uvicorn api.app:app --reload --port 8000
+    ```
+    The API will be available at `http://localhost:8000`.
+
+3.  **Start Frontend (Streamlit)**
+    ```bash
+    streamlit run streamlit_app/app.py
+    ```
+    The UI will open in your browser at `http://localhost:8501`.
+
 ## Model Performance
 
 - Training Dataset: HAM10000 (10,015 images)
