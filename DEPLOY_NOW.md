@@ -1,24 +1,18 @@
-# 🚀 Deploy to Hugging Face - Your Action Items
+# Deploy to Hugging Face - Your Action Items
 
-## ✅ All Files Are Ready!
+## Step-by-Step Instructions
 
-I've prepared everything for deployment. Here's what you need to do:
-
----
-
-## 📋 Step-by-Step Instructions
-
-### **Step 1: Create Hugging Face Account & Space** (2 minutes)
+### **Step 1: Hugging Face Account & Space** 
 
 1. **Create account** (if you don't have one):
    - Go to: https://huggingface.co/join
-   - Sign up (free)
+   - Sign up
 
 2. **Create a new Space**:
    - Go to: https://huggingface.co/new-space
    - **Space name**: `skin-lesion-classifier`
    - **License**: MIT
-   - **SDK**: Select **"Docker"** ⚠️ (Very important!)
+   - **SDK**: Select **"Docker"**
    - **Visibility**: Public
    - Click **"Create Space"**
 
@@ -29,7 +23,7 @@ I've prepared everything for deployment. Here's what you need to do:
 
 ---
 
-### **Step 2: Install Git LFS** (1 minute)
+### **Step 2: Install Git LFS** 
 
 Git LFS is needed to upload your 43MB model file.
 
@@ -44,14 +38,14 @@ git lfs install
 
 ---
 
-### **Step 3: Upload Your Code** (5 minutes)
+### **Step 3: Upload Your Code** 
 
 You have **two options** - choose what works best:
 
 #### **Option A: Using Git** (Recommended)
 
 ```bash
-cd /home/mehrab/skin-lesion-classifier
+cd skin-lesion-classifier
 
 # Track large model files with LFS
 git lfs track "models/*.pt"
@@ -89,20 +83,20 @@ git push hf main
 3. **Upload these files/folders**:
    ```
    Essential files:
-   ✅ Dockerfile
-   ✅ README.md
-   ✅ requirements.txt
-   ✅ config.yaml
-   ✅ .streamlit/config.toml
+   Dockerfile
+   README.md
+   requirements.txt
+   config.yaml
+   .streamlit/config.toml
    
    Code folders:
-   ✅ api/ (folder with app.py and utils.py)
-   ✅ streamlit_app/ (folder with app.py)
-   ✅ src/ (folder with all Python files)
-   ✅ model/ (folder with model.py)
+   api/ (folder with app.py and utils.py)
+   streamlit_app/ (folder with app.py)
+   src/ (folder with all Python files)
+   model/ (folder with model.py)
    
    Model file (IMPORTANT):
-   ✅ models/resnet18_best.pt (43MB)
+   models/resnet18_best.pt (43MB)
    ```
 
 4. Click **"Commit changes to main"**
@@ -120,30 +114,15 @@ After uploading:
 
 ---
 
-### **Step 5: Your App is Live!** 🎉
+### **Step 5: Congratulations, Your App is Live!** 
 
 Once building completes:
 - Your app is live at: `https://huggingface.co/spaces/YOUR_USERNAME/skin-lesion-classifier`
 - **Share this link** with anyone!
 - Test it by uploading an image
 
----
 
-## 📁 Files I Created For You
-
-All ready in: `/home/mehrab/skin-lesion-classifier/`
-
-- ✅ `README.md` - Space description
-- ✅ `Dockerfile` - Deployment config
-- ✅ `.streamlit/config.toml` - Streamlit settings
-- ✅ `.gitattributes` - Git LFS config
-- ✅ `HUGGINGFACE_DEPLOY.md` - Detailed guide
-- ✅ `api/app.py` & `api/utils.py` - Backend
-- ✅ `streamlit_app/app.py` - Beautiful purple UI
-
----
-
-## 🆘 Troubleshooting
+## Troubleshooting
 
 **Build fails?**
 - Check that `models/resnet18_best.pt` was uploaded
@@ -160,17 +139,17 @@ All ready in: `/home/mehrab/skin-lesion-classifier/`
 
 ---
 
-## 🎯 What Happens Next
+## What Happens Next
 
 After deployment:
-1. ✨ Your app has a public URL
-2. 🌍 Anyone can access it
-3. 📊 You can see visitor analytics
-4. 🔄 Push updates with `git push hf main`
+1. Your app has a public URL
+2. Anyone can access it
+3. You can see visitor analytics
+4. Push updates with `git push hf main`
 
 ---
 
-## ⏱️ Timeline
+## Timeline
 
 - Setup Git LFS: 1 min
 - Upload files: 3-5 min
@@ -179,7 +158,7 @@ After deployment:
 
 ---
 
-## 💡 Tips
+## Tips
 
 - **First deployment** takes longest (uploading model)
 - **Updates are faster** (just code changes)
@@ -188,6 +167,6 @@ After deployment:
 
 ---
 
-**Ready?** Follow Step 1 above to get started! 🚀
+**Ready?** Follow Step 1 above to get started! 
 
 Your public URL will be: `https://huggingface.co/spaces/YOUR_USERNAME/skin-lesion-classifier`

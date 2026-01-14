@@ -4,19 +4,11 @@ Get your app online so anyone can access it with a public URL!
 
 ---
 
-## 🚀 Recommended Options (Easiest → Most Control)
+## Recommended Options (Easiest → Most Control)
 
-### Option 1: Hugging Face Spaces (RECOMMENDED - FREE & EASY)
+### Option 1: Hugging Face Spaces (RECOMMENDED)
 
 **Best for**: Quick deployment, ML apps, free hosting
-
-**Pros**:
-- ✅ **100% Free** 
-- ✅ Beautiful public URL: `https://huggingface.co/spaces/YOUR_USERNAME/skin-lesion-classifier`
-- ✅ Optimized for ML/AI apps
-- ✅ Can run both FastAPI + Streamlit in one Space
-- ✅ No credit card required
-- ✅ Automatic HTTPS
 
 **Steps**:
 
@@ -49,12 +41,6 @@ mkdir -p .streamlit
 
 **Best for**: Professional deployment, separate services
 
-**Pros**:
-- ✅ Free tier available
-- ✅ Custom domain support
-- ✅ Automatic HTTPS
-- ✅ Can deploy FastAPI and Streamlit separately
-
 **Steps**:
 
 1. **Create account**: https://render.com/
@@ -84,12 +70,6 @@ mkdir -p .streamlit
 
 **Limitations**: Would need to deploy FastAPI separately or embed model in Streamlit
 
-**Pros**:
-- ✅ **100% Free forever**
-- ✅ Beautiful URLs: `https://YOUR_APP.streamlit.app`
-- ✅ Direct GitHub integration
-- ✅ No credit card required
-
 **Steps**:
 
 1. **Push to GitHub**:
@@ -116,11 +96,6 @@ mkdir -p .streamlit
 
 **Best for**: Easy deployment with good performance
 
-**Pros**:
-- ✅ $5 free credit monthly
-- ✅ Fast deployment
-- ✅ Good for both services
-
 **Steps**:
 
 1. **Create account**: https://railway.app/
@@ -131,39 +106,3 @@ mkdir -p .streamlit
    - Railway auto-detects and deploys
 
 ---
-
-## 📋 I'll Help You Deploy to Hugging Face (Recommended)
-
-This is the **easiest and completely free** option. I'll create all the necessary files for you.
-
-**What you'll get**:
-- Public URL: `https://huggingface.co/spaces/YOUR_USERNAME/skin-lesion-classifier`
-- Automatic SSL (HTTPS)
-- No credit card needed
-- Optimized for ML apps
-
-**Next steps**:
-1. Create a Hugging Face account
-2. I'll prepare all deployment files
-3. You upload to Hugging Face Spaces
-4. App goes live in ~2 minutes!
-
-Would you like me to prepare the Hugging Face deployment files now?
-
----
-
-## 🔒 Important Notes
-
-**Model File**: Your `resnet18_best.pt` (43MB) needs to be uploaded:
-- For Hugging Face: Use Git LFS for large files
-- For other platforms: May need to upload separately or use cloud storage
-
-**Free Tier Limitations**:
-- Most free tiers have usage limits
-- Apps may sleep after inactivity
-- For production with high traffic, consider paid tiers
-
-**Performance**:
-- GPU inference available on Hugging Face (paid)
-- Free tiers use CPU (slower predictions)
-- Consider model optimization for faster CPU inference
