@@ -31,7 +31,7 @@ This application uses a ResNet18 model trained on the HAM10000 dataset to classi
 
 ## Disclaimer
 
-**This is a research and educational tool.** It should NOT be used as a substitute for professional medical diagnosis. Always consult with a qualified healthcare provider for medical concerns.
+ **This is a research and educational tool.** It should NOT be used as a substitute for professional medical diagnosis. Always consult with a qualified healthcare provider for medical concerns.
 
 ## How to Use
 
@@ -47,3 +47,4 @@ This application uses a ResNet18 model trained on the HAM10000 dataset to classi
 - Architecture: ResNet18 with transfer learning
 - Image Size: 224x224
 - Classes: 7
+
